@@ -1,0 +1,13 @@
+{
+  "name": "template",
+  "type": "login",
+  "version": "1.0.0",
+  "description": "登录样例",
+  "bin": [],
+  "depend": [ ],
+  "keywords": [
+    "sunday",
+    "login"
+  ],
+  "author": "pysunday"
+}
