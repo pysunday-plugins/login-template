@@ -9,11 +9,11 @@ cryptoKey = getConfig('CRYPTO')('key')
 def getUrlMap(url):
     baseUrl = url + '/api'
     return {
-            'login': baseUrl + '//login',
+            'login': baseUrl + '/ogin',
             'currentUser': baseUrl + '/profile',
             }
 
-mustParamsTungeeLogin = {
+mustParamsTemplateLogin = {
         'phone': '手机号',
         'password': '密码',
         }
@@ -69,5 +69,5 @@ class TemplateLogin(LoginBase):
 
 
 if __name__ == "__main__":
-    tungee = TemplateLogin(getEnv('SUNDAY_CUS_TEMPLATE_PHONE'), getEnv('SUNDAY_CUS_TEMPLATE_PASSWORD'))
-    tungee.login()
+    template = TemplateLogin(getEnv('SUNDAY_CUS_TEMPLATE_PHONE'), getEnv('SUNDAY_CUS_TEMPLATE_PASSWORD'))
+    template.login()
